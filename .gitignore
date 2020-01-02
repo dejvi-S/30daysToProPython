@@ -185,4 +185,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Link dir
+*.lnk
 # End of https://www.gitignore.io/api/python,pycharm+iml
