@@ -10,9 +10,15 @@ for i in range(int(numberOfTestCases)):
     minElem = 0;
     for x in range(int(elements)):
         temp = input()
-        if temp not in words:
-            words.append(temp)
+        words.append(temp)
     maxElem = len(words)
+    dictWords = dict()
+    for word in words:
+        if word not in dictWords:
+            dictWords[word] = 1
+        else:
+            dictWords[word] += 1
+    print(dictWords)
     words = [word[:-2] for word in words]
     words = list(set(words))
     minElem = len(words)
