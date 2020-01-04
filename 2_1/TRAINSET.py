@@ -24,13 +24,22 @@ for i in range(int(numberOfTestCases)):
             dictFalse[word] = 1
         else:
             dictFalse[word] += 1
-    print(wordsTrue)
-    print(wordsFalse)
     del wordsTrue
     del wordsFalse
-    print(dictFalse)
-    print(dictTrue)
-    for word in
+    counter = 0
+    for word in dictTrue:
+        if word in dictFalse:
+            if dictTrue[word] > dictFalse[word]:
+                counter += dictTrue[word]
+                dictFalse.pop(word)
+            else:
+                counter += dictFalse[word]
+                dictFalse.pop(word)
+        else:
+            counter += dictTrue[word]
+    for word in dictFalse:
+        counter += dictFalse[word]
+    print(counter)
 
 
 
