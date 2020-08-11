@@ -1,2 +1,1 @@
-# 30daysToProPython
-My 30 days journey to Python programming
+CodeChef problems solved in Python
